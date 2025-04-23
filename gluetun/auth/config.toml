@@ -1,0 +1,23 @@
+# Gluetun Control Server Authentication Configuration
+# File: /mnt/user/appdata/gluetun-nginx/auth/config.toml
+
+[[roles]]
+# Name of the role, can be descriptive
+name = "nginx_proxy_script"
+
+# List of API routes this role is allowed to access
+# Format: "HTTP-METHOD /path"
+routes = [
+  "GET /v1/openvpn/portforwarded",  # Included for completeness / potential future use
+  "GET /v1/publicip/ip"             # REQUIRED for the script to fetch country info
+]
+
+# Authentication method and credentials for this role
+auth = "basic"
+username = "your_username"  # Replace with your username
+password = "your_password"  # Replace with your password
+
+# You could add other roles below if needed for different users/scripts
+# [[roles]]
+# name = "another_role"
+# ...
