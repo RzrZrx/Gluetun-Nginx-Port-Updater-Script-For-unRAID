@@ -152,8 +152,13 @@ INFO [port forwarding] Fetched Public IP: <ip>
 INFO [port forwarding] Fetched Country: <Country>
 INFO [port forwarding] Starting new socat proxy...
 INFO [port forwarding] Proxying external port <port> to internal Nginx port 80.
+INFO [port forwarding] ---------------------------------------------------------------------
+INFO [port forwarding] Nginx should now be accessible via VPN at:
+INFO [port forwarding] (VPN Country: <Country>
 INFO [port forwarding] URL: http://<ip>:<port>/
+INFO [port forwarding] ---------------------------------------------------------------------
 ```
+
 
 Access the URL from outside your network.
 
