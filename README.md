@@ -33,4 +33,9 @@ This allows the `socat` process inside Gluetun to reach Nginx on `127.0.0.1:<NGI
 
 ---
 
-*(You would then follow this introduction with the Prerequisites, Setup Instructions, Verification, etc., potentially having slightly different setup steps or configuration notes depending on which script version the user chooses).*
+**For detailed setup instructions, please see the project Wiki:**
+**[https://github.com/RzrZrx/Gluetun-Nginx-Port-Updater-Script-For-unRAID/wiki](https://github.com/RzrZrx/Gluetun-Nginx-Port-Updater-Script-For-unRAID/wiki)**
+
+---
+
+*(The rest of the README would follow, perhaps with troubleshooting or other sections).*
