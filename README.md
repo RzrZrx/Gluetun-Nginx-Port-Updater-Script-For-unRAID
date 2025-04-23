@@ -38,4 +38,3 @@ This allows the `socat` process inside Gluetun to reach Nginx on `127.0.0.1:<NGI
 
 ---
 
-*(The rest of the README would follow, perhaps with troubleshooting or other sections).*
