@@ -48,11 +48,24 @@ mkdir -p /mnt/user/appdata/gluetun-nginx/scripts/
 ### 2. Download and Configure the Script
 Update user configuration section in `update_nginx_proxy.sh`:
 ```bash
+# --- START USER CONFIGURATION ---
+
+# The internal port Nginx is listening on (inside the shared network namespace)
 NGINX_INTERNAL_PORT=80
+
+# File where Gluetun writes the public IP (Default: /gluetun/ip)
 GLUETUN_IP_FILE="/gluetun/ip"
+
+# Gluetun control server address
 GLUETUN_CONTROL_API="http://127.0.0.1:8000"
-GLUETUN_USERNAME="Gluetun_admin"
-GLUETUN_PASSWORD="Eifu6730!"
+
+# !! IMPORTANT !! Set these to match your Gluetun Control Server authentication
+# (Must match credentials in /gluetun/auth/config.toml or env vars if used)
+# Leave blank or as default values if control server auth is disabled.
+GLUETUN_USERNAME="your_gluetun_control_user"      # <--- CHANGE THIS to your Gluetun control user
+GLUETUN_PASSWORD="your_gluetun_control_password"  # <--- CHANGE THIS to your Gluetun control password
+
+# --- END USER CONFIGURATION ---
 ```
 Save to:
 ```
